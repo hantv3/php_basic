@@ -1,19 +1,17 @@
 <?php
-include "./namespaces.php";
-
-$table = new Html\Table();
-$table->title = "My table";
-$table->numRows = 5;
-
-$row = new Html\Row();
-$row->numCells = 3;
+class Fruit{
+    // Properties
+    public $name;
+    // Method
+    function set_name($name){
+        $this->name = $name;
+    }
+    
+    function get_name(){
+        return $this->name;
+    } 
+}
+$apple = new Fruit();
+$apple->set_name("Apple");
+echo $apple->get_name();
 ?>
-
-<html>
-    <?php
-    $table->message();
-    ?>
-    <?php
-    $row->message();
-    ?>
-</html>
