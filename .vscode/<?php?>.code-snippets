@@ -9,7 +9,7 @@
   "Print to console": {
     "scope": "php, html",
     "prefix": "php",
-    "body": ["<?php","", "?>"],
+    "body": ["<?php", "$0", "?>"],
     "description": "<?php?>"
   }
 }
